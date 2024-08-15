@@ -79,17 +79,6 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  fonts:
-  - family: "Noto_Serif"
-    fonts:
-        - lib/fonts/Noto_Serif/static/NotoSerif_Condensed-BlackItalic.ttf
-        - lib/fonts/Noto_Serif/NotoSerif-VariableFont_wdth,wght.ttf
-  - family: "Kanit"
-    fonts:
-        - lib/fonts/Kanit/Kanit-Black.ttf
-        - lib/fonts/Kanit/Kanit-SemiBoldItalic.ttf
-        - lib/fonts/Kanit/Kanit-SemiBold.ttf
-        - lib/fonts/Kanit/Kanit-Bold.ttf
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
