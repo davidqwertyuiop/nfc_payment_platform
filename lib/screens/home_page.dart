@@ -25,7 +25,7 @@ class _HomeScreenState extends State<HomeScreen> {
             Container(
               height: 200,
               child: ListView.separated(physics: ClampingScrollPhysics(),itemBuilder: (context, index){
-                return Mycards(card: myCards[index],);}, 
+                return Mycards(card: myCards[index],);},
                 separatorBuilder: (context, index){
                 return SizedBox(width: 10,);
               },shrinkWrap: true, scrollDirection:Axis.horizontal, itemCount: myCards.length),

@@ -11,7 +11,9 @@ class _ExchangePageState extends State<ExchangePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Exchange rate"),),
+      
+      appBar: AppBar(automaticallyImplyLeading: false,
+        title: Center(child: Text("Exchange rate")),),
     );
   }
 }

@@ -12,6 +12,7 @@ class CardScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        automaticallyImplyLeading: false,
         centerTitle: true,
         title: Text("My Cards",style: TextStyle(fontSize: 20, color:kPrimaryColor,),),
       ),
