@@ -1,9 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:nfc_payment_platform/screens/exchange.dart';
+import 'package:nfc_payment_platform/screens/transaction.dart';
 
+import '../screens/card_screen.dart';
+import '../screens/home_page.dart';
+import '../screens/settings.dart';
 import 'appbar.dart';
 
 class Bottombar extends StatefulWidget {
-  const Bottombar({super.key, required  body, required  appBar, });
+  const Bottombar({super.key, required SingleChildScrollView body,});
 
   @override
   _BottombarState createState() => _BottombarState();
@@ -12,35 +17,26 @@ class Bottombar extends StatefulWidget {
 class _BottombarState extends State<Bottombar> {
   int _selectedIndex = 0; // To keep track of the current selected icon
 
+  // List of pages to be displayed based on selected index
+  final List<Widget> _pages = [
+    HomeScreen(),        // Define this as your home screen
+    CardScreen(),        // Define this for your card-related screen
+    TransactionPage(), // Define this for your transaction history
+    ExchangePage(),    // Define this for currency exchange screen
+    Settings(),    // Define this for settings screen
+  ];
+
   void _onItemTapped(int index) {
     setState(() {
-      _selectedIndex = index;
+      _selectedIndex = index; // Update the selected index to switch pages
     });
-
-    // Navigate to the appropriate page based on the selected index
-    switch (index) {
-      case 0:
-        Navigator.pushNamed(context, '/');
-        break;
-      case 1:
-        Navigator.pushNamed(context, '/settings');
-        break;
-      case 2:
-        Navigator.pushNamed(context, '/transaction');
-        break;
-      case 3:
-        Navigator.pushNamed(context, '/exchange');
-        break;
-      case 4:
-        Navigator.pushNamed(context, '/card');
-    }
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: const AppBars(),
-      body: Container(), // The body content will be handled by the named routes
+      body: _pages[_selectedIndex], // Display the selected page
       bottomNavigationBar: Container(
         padding: const EdgeInsets.all(8.0),
         decoration: const BoxDecoration(
@@ -59,7 +55,6 @@ class _BottombarState extends State<Bottombar> {
               onPressed: () => _onItemTapped(1),
               icon: const Icon(Icons.credit_card_sharp),
             ),
-            
             IconButton(
               onPressed: () => _onItemTapped(2),
               icon: const Icon(Icons.playlist_add_check_outlined),
