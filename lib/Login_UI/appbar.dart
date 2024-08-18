@@ -1,8 +1,6 @@
 
 import 'package:flutter/material.dart';
 
-import 'search_control.dart';
-
 class AppBars extends StatelessWidget implements PreferredSizeWidget {
   const AppBars({
     super.key,
@@ -18,12 +16,7 @@ class AppBars extends StatelessWidget implements PreferredSizeWidget {
             Navigator.pushNamed(context, '/settings');
           },
         ),
-        const Expanded(
-          child: Padding(
-            padding:  EdgeInsets.symmetric(horizontal: 10.0),
-            child: SearchControl(),
-          ),
-        ),
+        Title(color: Colors.grey[900]!, child: Text("NFC Pay")),
         IconButton(
           icon: const Icon(Icons.notifications),
           onPressed: () {

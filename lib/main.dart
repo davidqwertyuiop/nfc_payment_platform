@@ -3,8 +3,8 @@ import 'package:nfc_payment_platform/exchange.dart';
 
 import 'Login_UI/loginscreen.dart';
 import 'app_colors/themes_dart.dart';
-import 'messages.dart';
 import 'settings.dart';
+import 'transaction.dart';
 
 void main() {
   runApp(const MyApp());

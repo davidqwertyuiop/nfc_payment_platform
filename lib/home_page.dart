@@ -1,7 +1,5 @@
 
 import 'package:flutter/material.dart';
-
-import 'Login_UI/bottombar.dart';
  class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
 
@@ -13,7 +11,7 @@ class _HomeScreenState extends State<HomeScreen> {
   TextEditingController textEditingController =  TextEditingController();
   @override
   Widget build(BuildContext context) {
-    return const Bottombar(
+    return Scaffold(
    
       
       );
