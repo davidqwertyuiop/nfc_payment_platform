@@ -16,7 +16,12 @@ class AppBars extends StatelessWidget implements PreferredSizeWidget {
             Navigator.pushNamed(context, '/settings');
           },
         ),
-        Title(color: Colors.grey[900]!, child: Text("NFC Pay")),
+        Expanded(
+          child: Padding(
+            padding:  EdgeInsets.symmetric(horizontal: 10.0),
+            child: Center(child: Title(color: Colors.grey[900]!, child: Text("NFC Pay", style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold), ))),
+          ),
+        ),
         IconButton(
           icon: const Icon(Icons.notifications),
           onPressed: () {

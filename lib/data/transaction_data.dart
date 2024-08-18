@@ -70,5 +70,95 @@ List <TransactionData>myTransactions=[
   month: "August",
   name: "Dummy Text",
   transactionColor: Colors.green[100]!,
+  ),
+  
+  TransactionData(
+  avatar:"assets/images/avatar2.png",
+  currentBalance: "\$453",
+  changePercentage:"0.22",
+  changePercentageIndicator: "down",
+  month: "August",
+  name: "Dummy Text",
+  transactionColor: Colors.green[100]!,
+  ),
+  
+  TransactionData(
+  avatar:"assets/images/avatar2.png",
+  currentBalance: "\$453",
+  changePercentage:"0.22",
+  changePercentageIndicator: "down",
+  month: "August",
+  name: "Dummy Text",
+  transactionColor: Colors.green[100]!,
+  ),
+  
+  TransactionData(
+  avatar:"assets/images/avatar2.png",
+  currentBalance: "\$453",
+  changePercentage:"0.22",
+  changePercentageIndicator: "down",
+  month: "August",
+  name: "Dummy Text",
+  transactionColor: Colors.green[100]!,
+  ),
+  
+  TransactionData(
+  avatar:"assets/images/avatar2.png",
+  currentBalance: "\$453",
+  changePercentage:"0.22",
+  changePercentageIndicator: "down",
+  month: "August",
+  name: "Dummy Text",
+  transactionColor: Colors.green[100]!,
+  ),
+  
+  TransactionData(
+  avatar:"assets/images/avatar2.png",
+  currentBalance: "\$453",
+  changePercentage:"0.22",
+  changePercentageIndicator: "down",
+  month: "August",
+  name: "Dummy Text",
+  transactionColor: Colors.green[100]!,
+  ),
+  
+  TransactionData(
+  avatar:"assets/images/avatar2.png",
+  currentBalance: "\$453",
+  changePercentage:"0.22",
+  changePercentageIndicator: "down",
+  month: "August",
+  name: "Dummy Text",
+  transactionColor: Colors.green[100]!,
+  ),
+  
+  TransactionData(
+  avatar:"assets/images/avatar2.png",
+  currentBalance: "\$453",
+  changePercentage:"0.22",
+  changePercentageIndicator: "down",
+  month: "August",
+  name: "Dummy Text",
+  transactionColor: Colors.green[100]!,
+  ),
+  
+  TransactionData(
+  avatar:"assets/images/avatar2.png",
+  currentBalance: "\$453",
+  changePercentage:"0.22",
+  changePercentageIndicator: "down",
+  month: "August",
+  name: "Dummy Text",
+  transactionColor: Colors.green[100]!,
+  ),
+  
+  TransactionData(
+  avatar:"assets/images/avatar2.png",
+  currentBalance: "\$453",
+  changePercentage:"0.22",
+  changePercentageIndicator: "down",
+  month: "August",
+  name: "Dummy Text",
+  transactionColor: Colors.green[100]!,
   )
 ];

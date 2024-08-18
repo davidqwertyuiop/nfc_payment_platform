@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'appbar.dart';
 
 class Bottombar extends StatefulWidget {
-  const Bottombar({super.key});
+  const Bottombar({super.key, required  body, required  appBar, });
 
   @override
   _BottombarState createState() => _BottombarState();
@@ -31,6 +31,8 @@ class _BottombarState extends State<Bottombar> {
       case 3:
         Navigator.pushNamed(context, '/exchange');
         break;
+      case 4:
+        Navigator.pushNamed(context, '/card');
     }
   }
 
@@ -55,8 +57,9 @@ class _BottombarState extends State<Bottombar> {
             ),
             IconButton(
               onPressed: () => _onItemTapped(1),
-              icon: const Icon(Icons.settings),
+              icon: const Icon(Icons.credit_card_sharp),
             ),
+            
             IconButton(
               onPressed: () => _onItemTapped(2),
               icon: const Icon(Icons.playlist_add_check_outlined),
@@ -64,6 +67,10 @@ class _BottombarState extends State<Bottombar> {
             IconButton(
               onPressed: () => _onItemTapped(3),
               icon: const Icon(Icons.currency_exchange_sharp),
+            ),
+            IconButton(
+              onPressed: () => _onItemTapped(4),
+              icon: const Icon(Icons.settings),
             ),
           ],
         ),

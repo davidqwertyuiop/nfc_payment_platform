@@ -19,7 +19,7 @@ class CardModel{
 
 List<CardModel> myCards =[
   CardModel(
-    cardHolderName: "Damian Cole",
+    cardHolderName: "Shalom Daniela",
     cardNumber: "34** **** *** 1234",
     cardColor: Colors.black,
     cvv: "**1",
@@ -28,7 +28,13 @@ List<CardModel> myCards =[
  CardModel(
     cardHolderName: "Damian Cole",
     cardNumber: "32** **** *** 0234",
-    cardColor: Colors.black,
+    cardColor: Colors.grey[900]!,
+    cvv: "**2",
+    expDate: "11/25"),
+  CardModel(
+    cardHolderName: "Damian Silas",
+    cardNumber: "32** **** *** 0234",
+    cardColor: Colors.orange,
     cvv: "**2",
     expDate: "11/25"),
 ];
