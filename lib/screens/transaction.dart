@@ -12,7 +12,8 @@ class TransactionPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar:AppBar(title: Center(child: Text("Transaction History",style: TextStyle(color: Colors.grey[950],fontSize: 20,fontWeight: FontWeight.bold) ,))),
+      appBar:AppBar(automaticallyImplyLeading: false,
+        title: Center(child: Text("Transaction History",style: TextStyle(color: Colors.grey[950],fontSize: 20,fontWeight: FontWeight.bold) ,))),
       body: SingleChildScrollView(
         physics: ClampingScrollPhysics(),
         child: Padding(padding: const EdgeInsets.all(20.0),

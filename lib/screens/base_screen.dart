@@ -38,7 +38,7 @@ class _BaseScreenState extends State<BaseScreen> {
             BottomNavigationBarItem(icon: Icon(CupertinoIcons.home), label: "Home"),
             BottomNavigationBarItem(icon: Icon(CupertinoIcons.creditcard_fill), label: "Cards"),
             BottomNavigationBarItem(icon: Icon(Icons.currency_exchange_sharp), label: "Exchange"),
-            BottomNavigationBarItem(icon: Icon(Icons.currency_exchange_sharp), label: "History"),
+            BottomNavigationBarItem(icon: Icon(Icons.playlist_add_check_outlined), label: "History"),
             BottomNavigationBarItem(icon: Icon(Icons.stacked_bar_chart), label: "Overview"),
           ],
           currentIndex: _selectedIndex,
