@@ -1,7 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:nfc_payment_platform/Container_sets/cards.dart';
-import 'package:nfc_payment_platform/Login_UI/bottombar.dart';
+import 'package:nfc_payment_platform/Login_UI/appbar.dart';
 import 'package:nfc_payment_platform/data/card_data.dart';
  class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -14,7 +14,8 @@ class _HomeScreenState extends State<HomeScreen> {
   TextEditingController textEditingController =  TextEditingController();
   @override
   Widget build(BuildContext context) {
-    return Bottombar(
+    return Scaffold(
+      appBar: AppBars(),
       body: SingleChildScrollView(
         physics: ClampingScrollPhysics(),
         child: Padding(padding: const EdgeInsets.all(20.0),
