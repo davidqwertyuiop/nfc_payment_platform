@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:nfc_payment_platform/exchange.dart';
 
 import 'Login_UI/loginscreen.dart';
 import 'app_colors/themes_dart.dart';
-import 'maps.dart';
 import 'messages.dart';
 import 'settings.dart';
 
@@ -18,9 +18,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       initialRoute: '/',
       routes: {
-        '/map': (context) => const MapsPage(),
+        '/card': (context) => const Card(),
         '/settings' : (context) => const Settings(),
-        '/messages': (context) => const MessagesPage(),
+        '/transaction': (context) => const TransactionPage(),
+        '/exchange': (context) => const ExchangePage(),
       },
       debugShowCheckedModeBanner: false,
       theme: ThemeData.light(),

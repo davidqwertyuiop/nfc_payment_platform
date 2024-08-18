@@ -8,11 +8,11 @@ class CardModel{
   Color cardColor;
 
   CardModel({
-   cardHolderName,
-    cardNumber,
-    cardColor,
-    cvv,
-    expDate,
+    required this.cardHolderName,
+    required this.cardNumber,
+    required this.cardColor,
+    required this.cvv,
+    required this.expDate,
     });
   }
 
@@ -20,14 +20,14 @@ class CardModel{
 List<CardModel> myCards =[
   CardModel(
     cardHolderName: "Damian Cole",
-    cardNumber: "**** **** *** 1234",
+    cardNumber: "34** **** *** 1234",
     cardColor: Colors.black,
     cvv: "**1",
     expDate: "12/25"
  ),
- CardsModel(
+ CardModel(
     cardHolderName: "Damian Cole",
-    cardNumber: "**** **** *** 0234",
+    cardNumber: "32** **** *** 0234",
     cardColor: Colors.black,
     cvv: "**2",
     expDate: "11/25"),

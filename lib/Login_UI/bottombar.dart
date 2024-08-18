@@ -16,8 +16,9 @@ class _BottombarState extends State<Bottombar> {
   // Define your pages here
   final List<Widget> _pages = [
     const Center(child: Text('Home Page Content')),
-    const Center(child: Text('Maps Page Content')),
-    const Center(child: Text('Messages Page Content')),
+    const Center(child: Text('Settings Page Content')),
+    const Center(child: Text('Cards Page Content')),
+    const Center(child: Text("Transaction History Page"),)
   ];
 
   void _onItemTapped(int index) {
@@ -50,15 +51,19 @@ class _BottombarState extends State<Bottombar> {
               children: [
                 IconButton(
                   onPressed: () => _onItemTapped(1),
-                  icon: const Icon(Icons.add_location_alt_outlined),
+                  icon: const Icon(Icons.credit_card),
                 ),
                 IconButton(
-                  onPressed: () => _onItemTapped(0),
-                  icon: const Icon(Icons.home),
+              onPressed: () => _onItemTapped(0),
+              icon: const Icon(Icons.home),
+            ),
+            IconButton(
+                  onPressed: () => _onItemTapped(3),
+                  icon: const Icon(Icons.currency_exchange_sharp),
                 ),
                 IconButton(
                   onPressed: () => _onItemTapped(2),
-                  icon: const Icon(Icons.message),
+                  icon: const Icon(Icons.playlist_add_check_outlined),
                 ),
               ],
             ),
