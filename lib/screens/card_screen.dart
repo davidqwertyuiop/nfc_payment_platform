@@ -14,33 +14,40 @@ class CardScreen extends StatelessWidget {
       appBar: AppBar(
         automaticallyImplyLeading: false,
         centerTitle: true,
-        title: Text("My Cards",style: TextStyle(fontSize: 20, color:kPrimaryColor,),),
+        title: Text("My Cards",style: TextStyle(fontSize: 20, color: kPrimaryColor),),
       ),
-      body: SingleChildScrollView(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            Container(
-              padding: const EdgeInsets.all(20),
-              child: ListView.separated(
-                shrinkWrap: true,
-                itemBuilder: (context, index){
-                return Mycards(card: myCards[index]);
-                },
+      body: ListView(
+        physics: ClampingScrollPhysics(), // Keeps the scroll behavior smooth
+        padding: const EdgeInsets.all(20),
+        children: [
+          ListView.separated(
+            shrinkWrap: true, // Allows the list to take up the necessary space
+            physics: NeverScrollableScrollPhysics(), // Prevents nested scrolling issues
+            itemBuilder: (context, index) {
+              return Mycards(card: myCards[index]);
+            },
                 separatorBuilder: (context, index){
                   return SizedBox(height: 20,);
                 },
-                itemCount: myCards.length,),
+            itemCount: myCards.length,
+          ),
+          SizedBox(height: 20), // Adds spacing after the card list
+          CircleAvatar(
+            radius: 30.0,
+            child: Icon(
+              Icons.add,
+              size: 30,
+              color: Colors.blue,
             ),
-            CircleAvatar(
-              radius: 30.0,
-              child: Icon(Icons.add, size: 30,color: Colors.blue,
-              ),
-              ),
-              Text("Add Card",style: ApptextStyle.LISTTILE_TITLE,)
-            
-          ],
-        ),
+          ),
+          SizedBox(height: 10), // Adds spacing before the text
+          Center(
+            child: Text(
+              "Add Card",
+              style: ApptextStyle.LISTTILE_TITLE,
+            ),
+          ),
+        ],
       ),
     );
   }
