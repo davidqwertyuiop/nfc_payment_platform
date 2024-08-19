@@ -1,6 +1,8 @@
 # nfc_payment_platform
 
-A new Flutter project.
+This platform is an application that enables nfc communication, and supports google play and apple payment methods. 
+To enable this service, add flutter_nfc_kit
+then add permissions to the android Manifest.xml
 
 ## Getting Started
 

@@ -3,6 +3,7 @@
         android:label="nfc_payment_platform"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
+        <uses-permission android:name="android.permission.NFC" />
         <activity
             android:name=".MainActivity"
             android:exported="true"

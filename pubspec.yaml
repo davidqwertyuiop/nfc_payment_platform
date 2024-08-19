@@ -41,6 +41,7 @@ dependencies:
   google_maps_flutter: ^2.9.0
   font_awesome_flutter: ^10.7.0
   awesome_icons: ^1.1.0
+  flutter_nfc_kit: ^3.4.1
 
 dev_dependencies:
   flutter_test:
